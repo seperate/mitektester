@@ -19,6 +19,8 @@ public class UsersController {
         return userJpaRepository.findAll();
     }
 
+    // Eyup Cingel olarak bu dosyayi save ediyorum
+
     @GetMapping("/{name}")
     public Users getUser(@PathVariable String name) {
         return userJpaRepository.findByName(name);
